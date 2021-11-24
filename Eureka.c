@@ -84,13 +84,7 @@ int generate_main(unsigned char *key, unsigned char *plaintext)
 
 	return 0;
 }
-update.c
-#include <stdio.h>
-#include <string.h>
-#include <stdint.h>
 
-#define Nb 4 //4 4 4
-#define Nr 14 //10 12 14
 
 int update_sub(unsigned char *key, unsigned char *plaintext, unsigned char *seed)
 {
@@ -492,9 +486,7 @@ void Cipher(unsigned char* input, unsigned char* output, unsigned char* w) //Cip
 	}
 	//wordtobyte(input, output);
 }
-#include <stdio.h>
-#include <string.h>
-#include <stdint.h>
+
 int main()
 {
 	unsigned char plaintext[16] = { 0x00, };
